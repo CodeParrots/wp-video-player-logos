@@ -128,7 +128,7 @@ class CP_Video_Player_Logos {
 	public function enqueue_scripts() {
 
 		wp_enqueue_script( 'video-player-logos', plugin_dir_url( __FILE__ ) . '/assets/js/video-player-logo.js', [ 'jquery', 'wp-mediaelement' ], self::$version, true );
-		wp_localize_script( 'video-player-logos', 'videoPlayerLogo', apply_filters( 'video-player-logos', get_option( 'video_player_logo', $this->options ) ) );
+		wp_localize_script( 'video-player-logos', 'videoPlayerLogo', apply_filters( 'video_player_logos', get_option( 'video_player_logo', $this->options ) ) );
 
 		wp_enqueue_style( 'video-player-logos', plugin_dir_url( __FILE__ ) . '/assets/css/video-player-logo.css', [ 'wp-mediaelement' ], self::$version, 'all' );
 
