@@ -1,0 +1,55 @@
+/* Overlay Logo */
+.mejs-container .mejs-overlay-logo {
+	position: absolute;
+	width: 25%;
+	min-width: 125px;
+	cursor: pointer;
+}
+
+	.mejs-container .mejs-overlay-logo.top-left {
+		top: 0;
+		left: 0;
+	}
+
+	.mejs-container .mejs-overlay-logo.top-right {
+		top: 0;
+		right: 0;
+	}
+
+	.mejs-container .mejs-overlay-logo.bottom-left {
+		bottom: 40px; /* height offset of mejs controls */
+		left: 0;
+	}
+
+	.mejs-container .mejs-overlay-logo.bottom-right {
+		bottom: 40px; /* height offset of mejs controls */
+		right: 0;
+	}
+
+	.mejs-container .mejs-overlay-logo.center {
+		left: 0;
+		right: 0;
+		top: 35%;
+		margin: 0 auto;
+	}
+
+/* Toolbar Logo */
+.mejs-container .mejs-controls .mejs-toolbar-logo-button {
+	overflow: hidden;
+	cursor: pointer
+}
+
+.mejs-container .mejs-controls .mejs-toolbar-logo-button button {
+	background-size: contain !important;
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5){
+
+	.mejs-container .mejs-controls .mejs-toolbar-logo-button button {
+		-webkit-background-size: 20px 20px !important;
+		-moz-background-size: 20px 20px !important;
+		background-size: 20px 20px !important;
+	}
+
+}
